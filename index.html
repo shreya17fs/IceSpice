@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <header>
+        <div class="logo-container">
+           <span class="logo-text">MOBY</span>
+            
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search users by name or location...">
+            <button onclick="searchUsers()">Search</button>
+        </div>
+        <nav class="nav-links">
+            <a href="#top">HOME</a>
+            <a href="#contact">CONTACT US</a>
+        </nav>
+    </header>
+   
+    
+    <main>
+        <section id="peopleNearYou">
+            <h2 class="section-title">People Near You</h2>
+            <div class="card">
+                <img src="newmalepfp.jpeg" alt="Person 1">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Aarav Singh</strong>
+                        <span>Bangalore,</span>
+                        <span class="favorite-artists">Favorite Artists: Arijit Singh, Ed Sheeran, Taylor Swift</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pfps_icons_profile pic_discord_Instagram_Pinterest_girls_girl_kawaii_grunge_random_soft_coqquete_for you_fyp.jpeg" alt="Person 2">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Neha Gupta</strong>
+                        <span>Bangalore,</span>
+                        <span class="favorite-artists">Favorite Artists: AR Rahman, Travis Scott, BTS</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="newmalepfp.jpeg" alt="Person 3">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Rahul Sharma</strong>
+                        <span>Bangalore,</span>
+                        <span class="favorite-artists">Favorite Artists: Atif Aslam, Neha Kakkar, Badshah</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        <div class="explore-all">
+            <button class="explore-all-btn" onclick="showSection('peopleNearYou')">Explore All</button>
+        </div>
+        
+        <section id="peopleAllOverIndia">
+            <h2 class="section-title">People All Over India</h2>
+            <div class="card">
+                <img src="newmalepfp.jpeg" alt="Person 4">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Vivek Patel</strong>
+                        <span>Ahmedabad,</span>
+                        <span class="favorite-artists">Favorite Artists: AR Rahman, Sunidhi Chauhan, Amit Trivedi</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pfps_icons_profile pic_discord_Instagram_Pinterest_girls_girl_kawaii_grunge_random_soft_coqquete_for you_fyp.jpeg" alt="Person 5">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Priya Verma</strong>
+                        <span>Delhi,</span>
+                        <span class="favorite-artists">Favorite Artists: Lata Mangeshkar, Kishore Kumar, Asha Bhosle</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pfps_icons_profile pic_discord_Instagram_Pinterest_girls_girl_kawaii_grunge_random_soft_coqquete_for you_fyp.jpeg" alt="Person 6">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Ananya Reddy</strong>
+                        <span>Hyderabad,</span>
+                        <span class="favorite-artists">Favorite Artists: Shankar Mahadevan, A.R. Rahman, Pritam</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        <div class="explore-all">
+            <button class="explore-all-btn" onclick="showSection('peopleAllOverIndia')">Explore All</button>
+        </div>
+        
+        <section id="peopleWorldwide">
+            <h2 class="section-title">People Worldwide</h2>
+            <div class="card">
+                <img src="newmalepfp.jpeg" alt="Person 7">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Michael Smith</strong>
+                        <span>USA,</span>
+                        <span class="favorite-artists">Favorite Artists: Drake, Adele, Beyoncé</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pfps_icons_profile pic_discord_Instagram_Pinterest_girls_girl_kawaii_grunge_random_soft_coqquete_for you_fyp.jpeg" alt="Person 8">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Maria Garcia</strong>
+                        <span>Spain,</span>
+                        <span class="favorite-artists">Favorite Artists: Rosalía, Alejandro Sanz, Enrique Iglesias</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pfps_icons_profile pic_discord_Instagram_Pinterest_girls_girl_kawaii_grunge_random_soft_coqquete_for you_fyp.jpeg" alt="Person 9">
+                <div class="details">
+                    <div class="profile-info">
+                        <strong>Julien Dubois</strong>
+                        <span>France,</span>
+                        <span class="favorite-artists">Favorite Artists: Daft Punk, Jean-Michel Jarre, David Guetta</span>
+                    </div>
+                    <button class="connect-btn" onclick="showPopup()">Connect</button>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        <div class="explore-all">
+            <button class="explore-all-btn" onclick="showSection('peopleWorldwide')">Explore All</button>
+        </div>
+        <div class="start-connecting">
+            <h1>GET, SET, CONNECT!</h1>
+        </div>
+        
+        <div class="login-signup">
+            <a href="login.html">
+                <button class="login-btn">Login</button>
+            </a>
+            <div class="new-to-moby">
+                New to MOBY? <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </main>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <h2>Login or Sign Up</h2>
+            <p>To get started, please login or sign up.</p>
+            <button class="popup-btn" onclick="location.href='login.html'">Login</button>
+            <button class="popup-btn" onclick="location.href='signup.html'">Sign Up</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Created and designed by Shreya Singh and Asmita Chauhan</p>
+            <p>All rights reserved &#169;</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
