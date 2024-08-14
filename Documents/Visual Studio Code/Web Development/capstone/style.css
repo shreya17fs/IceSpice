@@ -1,0 +1,71 @@
+body{
+    text-align: center;
+    align-items: center;
+}
+.first{
+    background-image: url(back-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display: flex; 
+    flex-direction: column; 
+    color: rgb(255, 253, 250)
+}
+h1{
+    margin-top: 100px;
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;
+}
+h2{
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: cursive;
+    margin-bottom: 330px;
+}
+.about{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.about-me img{
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+h3{
+    color: rgb(54, 135, 221);
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+}
+.design{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.design span{
+    color: rgb(109, 158, 237);
+}
+.design img{
+    height: 250px;
+}
+.design p,h4{
+    text-align: left;
+}
+.hotwings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.hotwings span{
+    color: rgb(109, 158, 237);
+}
+.hotwings img{
+    height: 100px;
+    margin: auto 80px
+}
+.hotwings p,h4{
+    text-align: left;
+}

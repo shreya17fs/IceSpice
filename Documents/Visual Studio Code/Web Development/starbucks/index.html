@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-MYPAz3z0nDRR8P+AJpNae1PxfJ+ngf2yT0mZr5lWZ+g2D6kmA6aEoO/d5oGDRBwOQOjvwls7BqvcfYpUUy5JZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Starbucks Logo" class="logo">
+        <div class="logo-text">STARBUCKS 
+            <p>Your favorite coffee shop</p></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Starbucks</h1>
+        <p>Enjoy the best coffee experience!</p>
+        <div class="home-content">
+            <div class="staff-image">
+                <img src="staff.jpeg" alt="Staff Image">
+            </div>
+            <a href="#menu" class="order-now-btn">Order Now</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="coffee1.jpeg" alt="Coffee 1">
+            <div class="menu-info">
+                <h3>Espresso</h3>
+                <p>$3.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="coffee2.jpg" alt="Coffee 2">
+            <div class="menu-info">
+                <h3>Latte</h3>
+                <p>$4.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="coffee3.jpg" alt="Coffee 3">
+            <div class="menu-info">
+                <h3>Cappuccino</h3>
+                <p>$4.50</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="coffee4.jpeg" alt="Coffee 4">
+            <div class="menu-info">
+                <h3>Frappe</h3>
+                <p>$5.50</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or suggestion? Reach out to us!</p>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> 2024 Starbucks</p>
+    </footer>
+</body>
+</html>

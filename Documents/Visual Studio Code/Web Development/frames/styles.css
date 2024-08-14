@@ -1,0 +1,32 @@
+body{
+    height: 80%;
+    margin:100px;
+}
+.main{
+    min-height: 80%;
+}
+.a, .b{
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 350px;
+}
+.c, .d{
+    float:left;
+    width: 50%;
+    top:50%;
+    text-align: center;
+    height: 350px;
+}
+.a{
+    background-color: pink;
+}
+.b{
+    background-color: aqua;
+}
+.c{
+    background-color: orange;
+}
+.d{
+    background-color:greenyellow;
+}

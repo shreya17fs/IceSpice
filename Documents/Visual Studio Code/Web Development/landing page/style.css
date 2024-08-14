@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;1,100;1,400;1,600;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;   
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #e83fb3;
+    --second-color: #1e3932;
+}
+section{
+    padding: 50px 10%;
+}
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+img{
+    width: 100%;
+} 
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54/ 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}   
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 60px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 34px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ebdbc8;
+    gap: 1rem;
+}
+.home-text{
+    flex: 1 1 17rem;
+}
+.home-img{
+    flex: 1 1 17rem;
+}
+.home-img img{
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-22px, 0);
+    }
+    50%{
+        transform: translate(-0px, -22px);
+    }
+    100%{
+        transform: translate(-22px, 0);
+    }
+}
+.home-text span{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:var(--second-color)
+}
+.home-text h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.5rem;
+    font-style: oblique;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+.home-text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color:var(--second-color);
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+}
+.btn{
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+.btn:hover{
+    color: #fff;
+    background: var(--second-color);
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading span{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--second-color);
+}
+.heading h1{
+    font-size: 2rem;
+    color: var(--main-color);
+    font-family: fantasy;
+}
+.See-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px ;
+    margin-top: 2rem;
+}
+.See-menu .box{
+    flex: 1 1 10rem;
+    background: pink;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 12px rgb(235, 44, 235);
+
+}
+.See-menu .box .box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.See-menu .box h2{
+    color: #2baed5;
+    font-size: 1.4rem;
+    font-family: cursive;
+}
+.See-menu .box span{
+    color: #ec3527;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+    font-family: monospace;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    background: #ebdbc8;
+    gap: 1.5rem;
+}
+.about-img{
+    flex: 1 1 17rem;
+}
+.about-text{
+    flex: 1 1 17rem;
+}
+.about-text h2{
+    font-size: 1.2rem;
+    color: var(--second-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+    font-family: cursive;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact-img{
+    flex: 4.5 4.5 25rem;
+}
+.contact-text{
+    flex: 5 5 30rem;
+}
+.contact-text h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--main-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+}
+.social a .bx{
+    padding: 8px;
+    color: #fff;
+    background: #000000;
+    border-radius: 50%;
+}
+.social a .bx:hover{
+    background: var(--main-color);
+}
+.contact p{
+    text-align: center;
+}
+
+

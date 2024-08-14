@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateName(fname) {
+            if (fname == null || fname == "") {
+                alert("Name can't be blank!");
+                return false;
+            }
+            if (fname.length < 3) {
+                alert("Name must be atleast 3 characters long!");
+                return false;
+            }
+            return true;
+        }
+        function validateEmail(email) {
+            var reg = new RegExp("^[a-zA-Z0-9_.]+@[a-zA-Z0-9.]+$");
+            if (!reg.test(email)) {
+                alert("Invalid e-mail Address!");
+                return false;
+            }
+            return true;
+        }
+        function validateNumber(phno) {
+            if (isNaN(phno)) {
+                alert("Only Numeric Values are allowed!");
+                return false;
+            }
+            return true;
+        }
+    
+        function validateForm() {
+            let isValid = true;
+    
+            if (!validateName(document.signup.fname.value)) {
+                isValid = false;
+            }
+            if (!validateName(document.signup.lname.value)) {
+                isValid = false;
+            }
+            if (!validateEmail(document.signup.email.value)) {
+                isValid = false;
+            }
+            if (!validateNumber(document.signup.phno.value)) {
+                isValid = false;
+            }
+            isValid ? alert("Form Data is Valid") : alert("Form Data is not Valid")
+        }
+    </script>
+    
+</head>
+
+<body>
+    <form action="#" method="post" name="signup">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+            <label for="email">Student Email:</label>
+            <input type="email" name="email" id="email" placeholder="e.g., myname@example.com" required><br>
+            <label for="class">Class:</label>
+            <select name="class" id="class">
+                <option value="T6">T6</option>
+                <option value="T7">T7</option>
+                <option value="T8">T8</option>
+            </select><br>
+            <label for="phno">Phone Number:</label>
+            <input type="tel" name="phno" id="phno" required><br>
+            <label for="favcolor">Favourite Color:</label>
+            <input type="text" id="favcolor" name="favcolor" required><br>
+            <input type="submit" value="Submit" onclick=" event.preventDefault(); validateForm()">
+        </fieldset>
+    </form>
+</body>
+
+</html>
