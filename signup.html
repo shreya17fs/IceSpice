@@ -6,13 +6,18 @@
     <title>Sign Up - Moby</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="signup.css">
+    <script>
+        function handleSignUp(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = 'dash.html'; // Redirect to dash.html
+        }
+    </script>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="moby-favicon-black.png" alt="Moby Logo" height="40">
-            <span class="logo-text">Moby</span>
-        </div>
+            <span class="logo-text">MOBY</span>  
+         </div>
         <nav class="nav-links">
             <a href="#">HOME</a>
             <a href="#">CONTACT US</a>
@@ -20,7 +25,7 @@
     </header>
     <main class="signup-page">
         <div class="login-box">
-            <form id="signupForm" action="dashboard.html" method="post" class="login-form">
+            <form id="signupForm" onsubmit="handleSignUp(event)" class="login-form">
                 <h1>Sign Up for Moby</h1>
                 <div class="input-container">
                     <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
@@ -44,11 +49,8 @@
             </form>
         </div>
     </main>
-    <footer>
-        <div class="footer-content">
-            <p>Created and designed by Shreya Singh and Asmita Chauhan</p>
-            <p>All rights reserved &#169;</p>
-        </div>
+    <footer class="footer-content">
+        <p>&copy; 2024 MOBY. All rights reserved.</p>
     </footer>
 </body>
 </html>

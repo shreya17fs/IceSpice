@@ -272,20 +272,21 @@ main {
 }
 .footer-content {
     background-color: #000000;
-    text-align: center; /* Align content in the center */
-    padding: 5px; /* Add padding for spacing */
-    color: #ffffff; /* Text color */
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
 }
+
 .footer-content p {
-    margin: 5px 0; /* Adjust margin for spacing between paragraphs */
+    margin: 5px 0;
 }
 
 .footer-content p:last-child {
-    margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+    margin-bottom: 0;
 }
 .search-container {
     text-align: center;

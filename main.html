@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBY - Home</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-text">MOBY</div>
+        <nav class="nav-links">
+            <a href="#description">Description</a>
+            <a href="#features">Features</a>
+            <a href="#get-started">Get Started</a>
+            <a href="#Start-jam" id="jam-link">Jam</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Description Section -->
+        <section id="description" class="section">
+            <h2>~WELCOME TO MOBY~</h2>
+            <p>
+                MOBY is a revolutionary platform designed to enhance your experience by offering a wide range of features. Discover the unique benefits and capabilities that MOBY has to offer.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>Feature One</h3>
+                    <p>Let people know who are your favorite artists are, and explore others too.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature Two</h3>
+                    <p>Connect with the people with the same music taste as yours.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature Three</h3>
+                    <p>Chat with your newly made friends.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature Four</h3>
+                    <p>Start a music jam with your friends and vibe with them.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Started Section -->
+        <section id="get-started" class="section">
+            <a href="index.html" class="get-started">Get Started</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-content">
+        <p>&copy; 2024 MOBY. All rights reserved.</p>
+    </footer>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Try Subscription</h2>
+            <p>Explore premium features and enjoy an enhanced experience with our subscription plan.</p>
+            <a href="signup.html" class="popup-btn">Subscribe Now</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const jamLink = document.getElementById('jam-link');
+            const popup = document.getElementById('popup');
+            const closeBtn = document.querySelector('.popup .close-btn');
+
+            jamLink.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default link behavior
+                popup.style.display = 'flex'; // Show the popup
+            });
+
+            closeBtn.addEventListener('click', () => {
+                popup.style.display = 'none'; // Hide the popup
+            });
+
+            // Optional: Close the popup if the user clicks outside of it
+            window.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+

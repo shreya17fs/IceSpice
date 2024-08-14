@@ -8,13 +8,26 @@ body {
     min-height: 100vh;
 }
 header {
-    background-color: #7130f4;
+    background-color: black;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.nav-links {
+    display: flex;
+}
 
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
 
 .login-page {
     display: flex;
@@ -100,18 +113,23 @@ header {
     text-decoration: underline;
     color: #7130f4;
 }
-footer {
-    background-color: #7130f4;
-    padding: 10px 20px;
-    margin-top: auto;
-}
-
 .footer-content {
+    background-color: #000000;
     text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content p {
     margin: 5px 0;
+}
+
+.footer-content p:last-child {
+    margin-bottom: 0;
 }
 
 
