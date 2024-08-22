@@ -1,9 +1,9 @@
 body {
-    background-color: #121212;
-    color: #FFFFFF;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-image: url('__.jpeg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the image so it doesn’t scroll */
 }
 
 /* Header styles */

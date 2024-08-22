@@ -1,10 +1,12 @@
+/* Background Image for the Entire Page */
 body {
-    background-color: #121212;
-    color: #FFFFFF;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-image: url('__.jpeg'); /* Update with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Keep the background image fixed */
 }
+
 
 /* Header styles */
 header {
@@ -57,7 +59,7 @@ main {
 .section-title {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #7130f4;
+    border-bottom: 2px solid black;
     padding-bottom: 5px;
 }
 
@@ -148,7 +150,7 @@ main {
 }
 
 .popup-content {
-    background-color: #000000;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);

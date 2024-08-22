@@ -46,6 +46,11 @@ function searchUsers() {
         }
     });
 }
+// Function to redirect to chat.html
+function redirectToChat() {
+    window.location.href = 'chat.html';
+}
+
 
 // Add event listener for "Jam" link to show the popup
 document.addEventListener('DOMContentLoaded', () => {

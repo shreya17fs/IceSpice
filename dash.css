@@ -1,10 +1,10 @@
 /* Reset and base styles */
 body {
-    background-color: #121212;
-    color: #FFFFFF;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-image: url('__.jpeg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the image so it doesn’t scroll */
 }
 
 /* Header styles */
@@ -106,11 +106,11 @@ main {
 .section-title {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #7130f4;
+    border-bottom: 2px solid black;
     padding-bottom: 5px;
 }
 .chat-btn {
-    background-color: #7130f4; 
+    background-color: black; 
     border: none;
     color: white;
     width: 40px; /* Adjust width */
@@ -127,7 +127,7 @@ main {
 }
 
 .chat-btn:hover {
-    background-color: black; 
+    background-color: #7130f4; 
 }
 
 
@@ -192,7 +192,7 @@ main {
 }
 
 .connect-btn {
-    background-color: #7130f4; /* Dark pink/magenta */
+    background-color: black; /* Dark pink/magenta */
     color: #FFFFFF;
     border: none;
     padding: 8px 12px; /* Adjust padding for smaller size */
@@ -204,7 +204,7 @@ main {
 }
 
 .connect-btn:hover {
-    background-color: black; /* Lighter pink/magenta */
+    background-color: #7130f4; /* Lighter pink/magenta */
 }
 
 /* Popup styles */
@@ -221,7 +221,7 @@ main {
 }
 
 .popup-content {
-    background-color: #000000;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);

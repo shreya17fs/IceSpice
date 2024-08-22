@@ -1,11 +1,12 @@
 /* Main page styling */
 body {
-    background-color: #121212;
-    color: #FFFFFF;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-image: url('__.jpeg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the image so it doesn’t scroll */
 }
+
 
 /* Header styles */
 header {
@@ -111,7 +112,7 @@ main {
 
 .feature-item h3 {
     margin-top: 0;
-    color: #7130f4;
+    color: black;
 }
 
 .feature-item p {
@@ -171,7 +172,7 @@ main {
 }
 
 .popup-content {
-    background-color: #000000;
+    background-color: grey;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -202,5 +203,22 @@ main {
 .popup-btn:hover {
     background-color: #5d00a6; /* Darker shade of pink/magenta */
 }
+/* Info Box Styling */
+.info-box {
+    background-color: rgb(52, 51, 51); /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    max-width: 600px; /* Maximum width of the box */
+    margin: 20px auto; /* Center the box horizontally and add vertical spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.info-box p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Line height for readability */
+}
+
 
 
